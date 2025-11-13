@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="d-flex justify-content-center">
+  <div class="card shadow-sm" style="width: 22rem;">
+    <img src="{% static 'img/avatar.png' %}" class="card-img-top" alt="Avatar">
+    <div class="card-body text-center">
+      <h4 class="card-title">{{ user.username }}</h4>
+      {% if user.email %}<p class="text-muted">{{ user.email }}</p>{% endif %}
+      <p><strong>Saldo de Berries:</strong> {{ berries }} 🍓</p>
+      <p class="small text-muted">"Treinador em treinamento — sempre pronto para aventuras!"</p>
+      <a href="#" class="btn btn-outline-primary">Editar Perfil</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

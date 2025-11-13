@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="text-center mb-4">Sobre o Jogo 🎮</h1>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">O que é o Senacmon?</h5>
+        <p class="card-text">Senacmon é um jogo educativo inspirado no universo de capturar e treinar criaturas, adaptado para atividades e aprendizados.</p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Qual o objetivo?</h5>
+        <p class="card-text">Capturar Senacmons, treinar habilidades e disputar desafios. Este projeto é uma base para você expandir funcionalidades.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Como funciona?</h5>
+        <ul>
+          <li>Registro e login via Django auth.</li>
+          <li>Páginas de perfil e início personalizadas.</li>
+          <li>Você pode adicionar batalhas, captura e inventário.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

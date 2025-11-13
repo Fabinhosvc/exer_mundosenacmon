@@ -1,0 +1,31 @@
+:root{
+  --brand:#0b5ed7; /* azul */
+  --brand-dark:#084298;
+}
+body{
+  background: linear-gradient(180deg,#e7f0ff,#f8fbff);
+  min-height:100vh;
+}
+.senacmon-navbar{
+  background: linear-gradient(90deg,var(--brand),var(--brand-dark));
+}
+.btn-primary{
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.btn-primary:hover{
+  transform: translateY(-3px);
+  transition: all .2s ease;
+}
+.pokeball{
+  width:80px;
+  height:80px;
+  background-image: url('/static/img/pokeball.svg');
+  background-size: contain;
+  margin: 20px auto;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
